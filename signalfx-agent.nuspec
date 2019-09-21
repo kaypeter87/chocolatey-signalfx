@@ -4,7 +4,7 @@
     <id>signalfx-agent</id>
     <version>4.10.0</version>
     <title>SignalFX Smart Agent</title>
-    <authors>SignalFx</authors>
+    <authors>SignalFx, Peter Kay</authors>
 	<projectUrl>https://github.com/kaypeter87/chocolatey-signalfx</projectUrl>
     <copyright>2019</copyright>
     <tags>agent chocolatey signalfx monitoring</tags>
