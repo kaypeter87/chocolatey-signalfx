@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>signalfx-agent</id>
+    <version>4.10.0</version>
+    <title>SignalFX Smart Agent</title>
+    <authors>SignalFx</authors>
+	<projectUrl>https://github.com/kaypeter87/chocolatey-signalfx</projectUrl>
+    <copyright>2019</copyright>
+    <tags>agent chocolatey signalfx monitoring</tags>
+    <summary>Installs SignalFX's smart agent</summary>
+    <description>The SignalFx Smart Agent is a metric agent written in Go for monitoring infrastructure and application services in a variety of different environments.</description>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
