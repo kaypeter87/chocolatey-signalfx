@@ -7,7 +7,6 @@ $service = Get-Service "signalfx-agent" -ErrorAction SilentlyContinue
 
 if ($null -ne $service)
 {
-  $service | Stop-Service
   $uninstallArgs = '-service "uninstall"'
   Start-Process -FilePath "$destinationDir\SignalFxAgent\bin\signalfx-agent.exe" -ArgumentList $uninstallArgs -NoNewWindow
 }
