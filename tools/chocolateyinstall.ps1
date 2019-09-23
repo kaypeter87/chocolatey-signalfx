@@ -13,7 +13,7 @@ if(!(Test-Path -Path $configDir))
   New-Item -ItemType directory -Path $configDir | Out-Null
 }
 
-Expand-Archive -Path "$toolsDir\SignalFxAgent-4.10.0-win64.zip" -Destination "$destinationDir\"
+Expand-Archive -Path "$toolsDir\SignalFxAgent-4.10.0-win64.zip" -DestinationPath "$destinationDir\"
 
 if ($null -eq $service)
 {
