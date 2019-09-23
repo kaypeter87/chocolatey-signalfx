@@ -8,17 +8,9 @@ if(!(Test-Path -Path $destinationDir))
 {
   New-Item -ItemType directory -Path $destinationDir | Out-Null
 }
-
 if(!(Test-Path -Path $configDir))
 {
   New-Item -ItemType directory -Path $configDir | Out-Null
-}
-#In case we are re-installing or upgrading from non-choco then stop the existing service
-$service = Get-Service "signalfx-agent" -ErrorAction SilentlyContinue
-if ($null -ne $service)
-{
-    $service | Stop-Service
-    Start-Sleep -Seconds 2
 }
 
 Expand-Archive -Path "$toolsDir\SignalFxAgent-4.10.0-win64.zip" -Destination "$destinationDir\"
