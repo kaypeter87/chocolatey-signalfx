@@ -4,6 +4,7 @@ $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $destinationDir = "$($env:ProgramFiles)\SignalFx"
 $configDir = "$($env:ProgramData)\SignalFxAgent"
 
+# Test path to installation destination directory and agent config directory
 if(!(Test-Path -Path $destinationDir))
 {
   New-Item -ItemType directory -Path $destinationDir | Out-Null
