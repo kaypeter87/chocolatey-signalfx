@@ -1,5 +1,6 @@
 ﻿$ErrorActionPreference = 'Stop'; # stop on all errors
 
+# Specify install/config path
 $destinationDir = "$($env:ProgramFiles)\SignalFx"
 $configDir = "$($env:ProgramData)\SignalFxAgent"
 
