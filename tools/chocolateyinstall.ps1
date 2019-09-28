@@ -1,5 +1,6 @@
 ﻿$ErrorActionPreference = 'Stop'; # stop on all errors
 
+# Specify working directory and install/config path
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $destinationDir = "$($env:ProgramFiles)\SignalFx"
 $configDir = "$($env:ProgramData)\SignalFxAgent"
