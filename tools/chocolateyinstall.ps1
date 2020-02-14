@@ -21,7 +21,7 @@ if(!(Test-Path -Path $configDir))
 Import-Module -Name C:\Windows\System32\WindowsPowerShell\v1.0\Modules\Microsoft.PowerShell.Archive
 
 # Need to figure out how to automate pulling the latest version from the release page.
-Microsoft.PowerShell.Archive\Expand-Archive -Path "$toolsDir\SignalFxAgent-4.10.0-win64.zip" -DestinationPath "$destinationDir\" -Force
+Microsoft.PowerShell.Archive\Expand-Archive -Path "$toolsDir\SignalFxAgent-4.19.2-win64.zip" -DestinationPath "$destinationDir\" -Force
 
 # Use the agent binaries arguments to do the install and start the service. This will also create a template agent.yaml file
 if ($null -eq $service)
