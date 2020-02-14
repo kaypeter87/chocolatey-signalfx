@@ -1,4 +1,4 @@
-# SignalFx Smart Agent v4.10.0
+# SignalFx Smart Agent v4.19.2
 
 ## Chocolatey Package
 
