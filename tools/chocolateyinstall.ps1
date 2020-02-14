@@ -19,7 +19,9 @@ if(!(Test-Path -Path $configDir))
 # the ones that are standard with PowerShell. The Expand-Archive will be using its fully qualified
 # module name to make sure we are using the correct one for this chocolatey package.
 Import-Module -Name C:\Windows\System32\WindowsPowerShell\v1.0\Modules\Microsoft.PowerShell.Archive
-Microsoft.PowerShell.Archive\Expand-Archive -Path "$toolsDir\SignalFxAgent-4.10.0-win64.zip" -DestinationPath "$destinationDir\"
+
+# Need to figure out how to automate pulling the latest version from the release page.
+Microsoft.PowerShell.Archive\Expand-Archive -Path "$toolsDir\SignalFxAgent-4.10.0-win64.zip" -DestinationPath "$destinationDir\" -Force
 
 # Use the agent binaries arguments to do the install and start the service. This will also create a template agent.yaml file
 if ($null -eq $service)
