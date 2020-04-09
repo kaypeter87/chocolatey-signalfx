@@ -2,7 +2,7 @@
 
 ## Chocolatey Package
 
-This is a chocolatey package I created for use at Stack Overflow. It will take require the SignalFx Smart Agent (win64) `.zip` archive embedded into the package (when running a `choco pack`). Chocolatey works best when the packages contain the software it is managing and doesn't require downloads. But if the need arises, there are helper functions you can use to download and unzip the archive using `Install-ChocolateyZipPackage`.
+This is a chocolatey package I created for use at Stack Overflow. It will require the SignalFx Smart Agent (win64) `.zip` archive embedded into the package (when running a `choco pack`). Chocolatey works best when the packages contain the software it is managing and doesn't require downloads. But if the need arises, there are helper functions you can use to download and unzip the archive using `Install-ChocolateyZipPackage`.
 
 ## Things to know
 
